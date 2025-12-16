@@ -1,2 +1,2 @@
-# OT-GLP
-OT-GLP: Optimal Transport Guided Local-Global Prompt Learning
+# SOT-GLP
+SOT-GLP: Sparse Optimal Transport Guided Local-Global Prompt Learning
