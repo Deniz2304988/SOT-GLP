@@ -1,0 +1,16 @@
+CUDA_VISIBLE_DEVICES=4 python sot-glp/train_sot_glp.py \
+    --clip_name clip_vit_b16 \
+    --dataset_name imagenet \
+    --data_dir data  \
+    --inference_batch_size 256 \
+    --eval_ood True \
+    --eval_domains False \
+    --checkpointing_segments 0 \
+    --use_local_features True \
+    --parallel_text_encoder True \
+    --parallel_vision_encoder True \
+    --n_global_prompts 4 \
+    --n_local_prompts 4 \
+    --topk 5 10 10 10 \
+    --eval_only True \
+    --checkpoint_path results/imagenet_shot_16_best_10/gallop_imagenet_vit_b16_seed1.ckpt
